@@ -178,6 +178,7 @@ class SyspassApi extends ApiBase
         $AccountData->setAccountLogin($this->getParam('login', true));
         $AccountData->setAccountUrl($this->getParam('url'));
         $AccountData->setAccountNotes($this->getParam('notes'));
+        $AccountData->setUserGroupsId((array)$this->getParam('userGroupsId'));
 
         $Account = new Account($AccountData);
 
